@@ -23,7 +23,7 @@ def table(ax, data, rowLabels=None, colLabels=None, **kwargs):
     """
     plot_backend = _get_plot_backend("matplotlib")
     return plot_backend.table(
-        ax=ax, data=data, rowLabels=None, colLabels=None, **kwargs
+        ax=ax, data=data, rowLabels=rowLabels, colLabels=colLabels, **kwargs
     )
 
 
